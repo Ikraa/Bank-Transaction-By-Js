@@ -9,7 +9,9 @@
         <title>Bankig site</title>
     </head>
     <body>
-        <main>
+
+        <main class="w-3/4 mx-auto">
+            <!-- Set Balance and Transaction -->
             <header>
                 <h1 class="text-5xl font-semibold text-center mt-16">
                     <span class="text-purple-400">Welcome To</span> <span
@@ -17,6 +19,53 @@
                         class="text-purple-400">!!!</span>
                 </h1>
             </header>
+            <section class="mt-9 text-white">
+                <div class="grid grid-cols-3 gap-4 ">
+                    <div class="bg-green-400 rounded p-8">
+                        <h3 class="text-2xl">Deposit</h3>
+                        <h4 class="text-4xl">$<span id="diposit-total">00</span></h4>
+
+                    </div>
+                    <div class="bg-blue-400 rounded p-8">
+                        <h3 class="text-2xl">Withdraw</h3>
+                        <h4 class="text-4xl">$<span id="withdraw-total">00</span></h4>
+
+                    </div>
+                    <div class="bg-pink-400 rounded p-8">
+                        <h3 class="text-2xl">Balance</h3>
+                        <h4 class="text-4xl">$<span id="balance-total">1100</span></h4>
+
+                    </div>
+                </div>
+                </section>
+
+                <!-- Set Diposit and Withdraw -->
+                <section class="mt-9">
+                    <!-- Diposit -->
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="bg-purple-100 rounded p-8">
+                            <h3 class="text-2xl mb-4">Deposit Please</h3>
+                            <input id="diposit-input" class="border rounded
+                                border-gray-400 block
+                                mb-4 px-2" type="text"
+                                placeholder="$ Depostit your amount">
+                            <button id="diposit-btn" class="bg-blue-400 text-white
+                                px-4 py-2 rounded font-medium">Deposit</button>
+                        </div>
+                        <!-- Withdraw------>
+                        <div class="bg-red-100 rounded p-8">
+                            <h3 class="text-2xl mb-4">Withdraw Please</h3>
+                            <input id="withdraw-input" class="border rounded
+                                border-gray-400 block
+                                mb-4 px-2" type="text"
+                                placeholder="$ Withdraw your amount ">
+                            <button id="withdraw-btn" class="bg-red-400 text-white
+                                px-4 py-2 rounded font-medium">Withdraw</button>
+                        </div>
+                    </div>
+
+                </section>
+
         </main>
 
         <script src="js/banking.js"></script>

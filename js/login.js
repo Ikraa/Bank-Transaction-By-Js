@@ -8,10 +8,11 @@ const btn = document.getElementById("login-submit").addEventListener('click', fu
     const userField = document.getElementById('user-pass');
     const userPassword = userField.value;
 
+// check email and password:
     if (userEmail == "abc@gmail.com" && userPassword == "123") {
         window.location.href = "banking.html"
          
         // console.log("valid");
     }
-   
+    
 })
