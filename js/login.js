@@ -10,9 +10,12 @@ const btn = document.getElementById("login-submit").addEventListener('click', fu
 
 // check email and password:
     if (userEmail == "abc@gmail.com" && userPassword == "123") {
-        window.location.href = "banking.html"
+        window.location.href = "banking.html";
          
         // console.log("valid");
     }
+    else{
+        const errorMassage=document.getElementById('error-Msg');
+        errorMassage.style.display="block";
     
 })

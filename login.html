@@ -7,6 +7,7 @@
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
             rel="stylesheet">
 
+
         <title>Bank Transaction</title>
     </head>
     <body>
@@ -19,19 +20,26 @@
             <section class="bg-purple-100 w-3/4 mx-auto mt-8 p-8">
                 <h3 class="text-2xl mb-4">Login Please</h3>
                 <div>
-                    <input id="user-email" class="border rounded border-gray-400 block w-3/4
+                    <input id="user-email" class="border rounded border-gray-400
+                        block w-3/4
                         mb-4 px-2" type="email" name="email"
                         placeholder="write your email">
-                    <input id="user-pass" class="border rounded border-gray-400 block w-3/4
+                    <input id="user-pass" class="border rounded border-gray-400
+                        block w-3/4
                         mb-2 px-2"
                         type="password" name="password"
                         placeholder="write your password"><br>
-                    <button id="login-submit" class="bg-blue-400 text-white px-4 py-2 rounded font-medium">Submit</button>
+                    <button id="login-submit" class="bg-blue-400 text-white px-4
+                        py-2 rounded font-medium">Submit</button>
+                    <p class="text-red-500 pt-2 font-semibold hidden"
+                        id="error-Msg">Your password or email is wrong!! Please
+                        check again..!</p>
 
                 </div>
 
             </section>
         </main>
-        <script src="js/login.js"></script>
+
+        <script src="js/login-second.js"></script>
     </body>
-    </html>
+</html>
