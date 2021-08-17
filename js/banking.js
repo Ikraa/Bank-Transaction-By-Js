@@ -1,3 +1,4 @@
+
 // handled diposit button:
 const dipositButton = document.getElementById('diposit-btn').addEventListener('click', function () {
     // get the amount diposited:
